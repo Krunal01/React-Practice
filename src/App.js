@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 // import "./App.css";
 import react from "react";
+import NewExpense from "./Components/Newexpense/NewExpense";
 import Expenses from "./Components/Expenses";
 function App() {
   let expenses = [
@@ -31,6 +32,7 @@ function App() {
   ];
   return (
     <div className="App">
+      <NewExpense />
       <Expenses item={expenses} />
     </div>
   );

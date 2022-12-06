@@ -1,0 +1,7 @@
+.newexpense {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 0rem; */
+  /* height: 25rem; */
+}
