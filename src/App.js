@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 // import "./App.css";
-import ExpenseItem from "./Components/ExpenseItem";
+import Expenses from "./Components/Expenses";
 function App() {
   let expenses = [
     {
@@ -30,26 +30,7 @@ function App() {
   ];
   return (
     <div className="App">
-      <ExpenseItem
-        date={expenses[0].ExpenseDate}
-        title={expenses[0].ExpenseName}
-        cost={expenses[0].ExpenseCost}
-      />
-      <ExpenseItem
-        date={expenses[1].ExpenseDate}
-        title={expenses[1].ExpenseName}
-        cost={expenses[1].ExpenseCost}
-      />
-      <ExpenseItem
-        date={expenses[2].ExpenseDate}
-        title={expenses[2].ExpenseName}
-        cost={expenses[2].ExpenseCost}
-      />
-      <ExpenseItem
-        date={expenses[3].ExpenseDate}
-        title={expenses[3].ExpenseName}
-        cost={expenses[3].ExpenseCost}
-      />
+      <Expenses item={expenses} />
     </div>
   );
 }

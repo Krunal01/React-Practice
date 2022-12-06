@@ -10,7 +10,7 @@
 }
 
 .expenseitem {
-  width: 85rem;
+  /* width: 85rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,8 +18,9 @@
   border-radius: 1rem;
   background-color: #34495e;
   padding: 1rem;
-  margin-top: 3rem;
-  margin-left: 1rem;
+  margin: 1rem;
+  /* margin-top: 3rem; */
+  /* margin-left: 1rem; */
 }
 
 .expenseitem-name {
