@@ -30,9 +30,12 @@ function App() {
       ExpenseCost: 700,
     },
   ];
+  const newReceivedExpense = (catchNewdata) => {
+    // console.log(catchNewdata);
+  };
   return (
     <div className="App">
-      <NewExpense />
+      <NewExpense onnewReceivedExpense={newReceivedExpense} />
       <Expenses item={expenses} />
     </div>
   );
