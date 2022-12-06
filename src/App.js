@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 // import "./App.css";
+import react from "react";
 import Expenses from "./Components/Expenses";
 function App() {
   let expenses = [
