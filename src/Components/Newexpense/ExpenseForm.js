@@ -19,10 +19,10 @@ const ExpenseForm = (props) => {
     const expenseData = {
       title: Title,
       cost: Cost,
-      date: new Date(date),
+      date: new Date(),
     };
     props.oncatchData(expenseData);
-    // console.log(expenseData);
+    console.log(expenseData);
     setTitle("");
     setCost("");
     setDate("");

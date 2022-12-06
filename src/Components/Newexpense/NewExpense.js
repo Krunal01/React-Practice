@@ -9,7 +9,7 @@ const NewExpense = (props) => {
       id: Math.floor(Math.random() * 100),
     };
     props.onnewReceivedExpense(receiveNewData);
-    // console.log(receiveNewData);
+    console.log(receiveNewData);
   };
   return (
     <div className="newexpense">
