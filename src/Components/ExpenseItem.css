@@ -21,13 +21,7 @@
   margin-top: 3rem;
   margin-left: 1rem;
 }
-.expenseitem-date {
-  font-size: 2rem;
-  color: white;
-  font-weight: bold;
-  display: flex;
-  gap: 1rem;
-}
+
 .expenseitem-name {
   font-size: 2rem;
   color: white;

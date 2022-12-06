@@ -2,12 +2,54 @@
 // import "./App.css";
 import ExpenseItem from "./Components/ExpenseItem";
 function App() {
-  let ExpenseDate = new Date();
-  let ExpenseName = "School Fee";
-  let ExpenseCost = 300;
+  let expenses = [
+    {
+      id: 1,
+      ExpenseDate: new Date(),
+      ExpenseName: "Food ",
+      ExpenseCost: 150,
+    },
+    {
+      id: 1,
+      ExpenseDate: new Date(),
+      ExpenseName: "Books",
+      ExpenseCost: 300,
+    },
+    {
+      id: 1,
+      ExpenseDate: new Date(),
+      ExpenseName: "School Fee",
+      ExpenseCost: 1500,
+    },
+    {
+      id: 4,
+      ExpenseDate: new Date(),
+      ExpenseName: "House Rant",
+      ExpenseCost: 700,
+    },
+  ];
   return (
     <div className="App">
-      <ExpenseItem date={ExpenseDate} title={ExpenseName} cost={ExpenseCost} />
+      <ExpenseItem
+        date={expenses[0].ExpenseDate}
+        title={expenses[0].ExpenseName}
+        cost={expenses[0].ExpenseCost}
+      />
+      <ExpenseItem
+        date={expenses[1].ExpenseDate}
+        title={expenses[1].ExpenseName}
+        cost={expenses[1].ExpenseCost}
+      />
+      <ExpenseItem
+        date={expenses[2].ExpenseDate}
+        title={expenses[2].ExpenseName}
+        cost={expenses[2].ExpenseCost}
+      />
+      <ExpenseItem
+        date={expenses[3].ExpenseDate}
+        title={expenses[3].ExpenseName}
+        cost={expenses[3].ExpenseCost}
+      />
     </div>
   );
 }
