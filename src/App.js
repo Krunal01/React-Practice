@@ -2,9 +2,12 @@
 // import "./App.css";
 import ExpenseItem from "./Components/ExpenseItem";
 function App() {
+  let ExpenseDate = new Date();
+  let ExpenseName = "School Fee";
+  let ExpenseCost = 300;
   return (
     <div className="App">
-      <ExpenseItem />
+      <ExpenseItem date={ExpenseDate} title={ExpenseName} cost={ExpenseCost} />
     </div>
   );
 }
