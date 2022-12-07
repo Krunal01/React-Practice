@@ -3,14 +3,16 @@ import "./NewExpense.css";
 import ExpenseForm from "./ExpenseForm";
 
 const NewExpense = (props) => {
-  const catchData = (receiveData) => {
+  const catchData = (enteredExpenseData) => {
     const receiveNewData = {
-      ...receiveData,
+      ...enteredExpenseData,
       id: Math.floor(Math.random() * 100),
     };
-    props.onnewReceivedExpense(receiveNewData);
+
+    props.onaddExpense(receiveNewData);
     console.log(receiveNewData);
   };
+
   return (
     <div className="newexpense">
       <ExpenseForm oncatchData={catchData} />

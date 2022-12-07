@@ -13,13 +13,16 @@ const ExpenseForm = (props) => {
   };
   const dateChanging = (e) => {
     setDate(e.target.value);
+    // document.write(e.target.value);
+    // const curDate = setDate(e.target.value);
   };
   const submitHandler = (e) => {
     e.preventDefault();
     const expenseData = {
       title: Title,
       cost: Cost,
-      date: new Date(),
+      date: date,
+      // date: curDate,
     };
     props.oncatchData(expenseData);
     console.log(expenseData);

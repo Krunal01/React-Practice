@@ -5,15 +5,17 @@ function ExpenseDate(props) {
   // const year = props.date.getFullYear();
   // const day = props.date.getDate();
   // const month = props.date.getMonth();
-  // const year = props.date.togetFullYear();
-  const day = props.date.toLocalString(month);
-  const month = props.date.toLocaleString("en-US", { month: "long" });
-  const year = props.date.getFullYear();
+  // const year = props.date.getFullYear();
+  // const day = props.date.toLocalString(month);
+  // const month = props.date.toLocaleString("en-US", { month: "long" });
+  // const year = props.date.getFullYear();
+  const curDate = new Date().toLocaleDateString();
   return (
     <div className="expenseitem-date">
-      <div>{day}</div>
+      {/* <div>{day}</div>
       <div>{month}</div>
-      <div>{year}</div>
+      <div>{year}</div> */}
+      <div>{curDate}</div>
     </div>
   );
 }

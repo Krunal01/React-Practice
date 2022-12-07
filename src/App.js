@@ -4,41 +4,41 @@ import react, { useState } from "react";
 import NewExpense from "./Components/Newexpense/NewExpense";
 import Expenses from "./Components/Expenses";
 let dummyExpenses = [
-  {
-    id: 1,
-    ExpenseDate: new Date(),
-    ExpenseName: "Food ",
-    ExpenseCost: 150,
-  },
-  {
-    id: 1,
-    ExpenseDate: new Date(),
-    ExpenseName: "Books",
-    ExpenseCost: 300,
-  },
-  {
-    id: 1,
-    ExpenseDate: new Date(),
-    ExpenseName: "School Fee",
-    ExpenseCost: 1500,
-  },
-  {
-    id: 4,
-    ExpenseDate: new Date(),
-    ExpenseName: "House Rant",
-    ExpenseCost: 700,
-  },
+  // {
+  //   id: 1,
+  //   ExpenseDate: new Date(),
+  //   ExpenseName: "Food ",
+  //   ExpenseCost: 150,
+  // },
+  // {
+  //   id: 1,
+  //   ExpenseDate: new Date(),
+  //   ExpenseName: "Books",
+  //   ExpenseCost: 300,
+  // },
+  // {
+  //   id: 1,
+  //   ExpenseDate: new Date(),
+  //   ExpenseName: "School Fee",
+  //   ExpenseCost: 1500,
+  // },
+  // {
+  //   id: 4,
+  //   ExpenseDate: new Date(),
+  //   ExpenseName: "House Rant",
+  //   ExpenseCost: 700,
+  // },
 ];
 function App() {
   const [expenses, setExpenses] = useState(dummyExpenses);
-  const newReceivedExpense = (catchNewdata) => {
-    console.log(catchNewdata);
-    const updatedExpense = [catchNewdata, ...expenses];
+  const onaddExpense = (expense) => {
+    console.log(expense);
+    const updatedExpense = [expense, ...expenses];
     setExpenses(updatedExpense);
   };
   return (
     <div className="App">
-      <NewExpense onnewReceivedExpense={newReceivedExpense} />
+      <NewExpense onaddExpense={onaddExpense} />
       <Expenses item={expenses} />
     </div>
   );
